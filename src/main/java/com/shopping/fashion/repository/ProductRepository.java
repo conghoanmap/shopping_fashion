@@ -33,7 +33,8 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
         @Param("p_image") String image,
         @Param("p_price") double price,
         @Param("p_discount") int discount,
-        @Param("p_quantity") int quantity
+        @Param("p_quantity") int quantity,
+        @Param("p_category_id") int category_id
     );
 
     // calculate_inventory_value để tính giá trị kho hàng
